@@ -10,7 +10,7 @@ struct Student {
     int win;
 };
 
-void play(Student &play1, Student &play2){
+void play(Student& play1, Student& play2) {
     if (play1.go == play2.go) {
         play1.win += 0;
     }
@@ -26,6 +26,7 @@ int main()
 {
     Student arr[4];
     vector<string>nam;
+    int max = 0;
     arr[0] = { "Mark", "rock", 0 };
     arr[1] = { "Alex", "scissors", 0 };
     arr[2] = { "Ivan", "paper", 0 };
@@ -35,7 +36,12 @@ int main()
             play(arr[i], arr[k]);
         }
     }
+    string winner = "";
     for (int i = 0; i < size(arr); ++i) {
-        cout << arr[i].win << endl;
+        if (arr[i].win > max) {
+            max = arr[i].win;
+            winner = arr[i].name;
+        }
     }
+    cout << winner << endl;
 }
