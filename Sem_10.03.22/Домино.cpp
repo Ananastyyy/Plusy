@@ -18,7 +18,7 @@ public:
         this-> right;
     }
 
-    void Chance() {
+    void Chance() {										//проверяется, можно ли сходить каким-либо образом выбранной фишкой
         if (left == left_on_the_desk) {
             cout << left << " to the left" << endl;
         }
@@ -35,15 +35,15 @@ public:
             cout << "you can't move" << endl;
         }
     }
-    void Turn() {
+    void Turn() {										//разворот фишки для нужного хода
         int t = left;
         left = right;
         right = t;
     }
-    void Score() {
+    void Score() {										//подсчет очков за ход одной фишкой
         score = left + right;
     }
-    void Go(string& place) {
+    void Go(string& place) {							//ход фишкой
         if (place == "left") {
             left_on_the_desk = left;
             desk.insert(desk.begin(), right);
@@ -55,7 +55,7 @@ public:
             desk.push_back(right);
         }
     }
-    void Out() {
+    void Out() {										//вывод всей цепочи
         for (int k = 0; k < desk.size(); ++k) {
             if (k % 2 == 0) {
                 cout << '[' << desk[k] << " ";
