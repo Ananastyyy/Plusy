@@ -11,7 +11,7 @@ public:
     int score = 0;
     int left_on_the_desk = 1;
     int right_on_the_desk = 1;
-    vector<int>desk;
+    vector<int>desk={1,1};
 
     Move(int left, int right) {
         this-> left;
