@@ -6,8 +6,8 @@ int main()
 {
 	ifstream in;
 	ofstream out;
-	in.open("1.txt");
-	out.open("2.txt");
+	in.open("in.txt");
+	out.open("out.txt");
 	
 	int n;
 	in >> n;

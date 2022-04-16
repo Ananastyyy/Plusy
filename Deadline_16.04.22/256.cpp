@@ -7,14 +7,14 @@ int main()
 {
 	ifstream in;
 	ofstream out;
-	in.open("INPUT.TXT");
-	out.open("OUTPUT.TXT");
+	in.open("in.txt");
+	out.open("out.txt");
 	map<char, int>field;
 	field['X'] = 0;
 	field['Y'] = 0;
 	field['Z'] = 0;
 	int N;
-	cin >> N;
+	in >> N;
 	char L;
 	int P;
 	for (int i = 0; i < N; ++i) {

@@ -12,8 +12,8 @@ int main()
 	vector<long int> orig;
 	vector<long int> copy;
 
-	out.open("INPUT.TXT");
-	in.open("OUTOUT.TXT");
+	out.open("in.txt");
+	in.open("out.txt");
 	if (!in || !out)
 	{
 		cout << "Файл не открыт\n\n";

@@ -13,8 +13,8 @@ int main()
 	ofstream out;
 	vector<long int> num;
 
-	out.open("2.txt");
-	in.open("1.txt");
+	out.open("in.txt");
+	in.open("out.txt");
 	if (!in || !out)
 	{
 		cout << "Файл не открыт\n\n";
