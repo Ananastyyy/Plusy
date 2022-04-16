@@ -13,16 +13,16 @@ int main()
 	if (m < 1 || m>12) {
 		out << "ERROR!" << endl;
 	}
-	else if (m % 13 == 1 || m % 13 == 2 || m % 13 == 12) {
+	else if (m == 1 || m  == 2 || m  == 12) {
 		out << "WINTER" << endl;
 	}
-	else if (m % 13 == 3 || m % 13 == 4 || m % 13 == 5) {
+	else if (m  == 3 || m  == 4 || m  == 5) {
 		out << "SPRING" << endl;
 	}
-	else if (m % 13 == 6 || m % 13 == 7 || m % 13 == 8) {
+	else if (m  == 6 || m  == 7 || m  == 8) {
 		out << "SUMMER" << endl;
 	}
-	else if (m % 13 == 9 || m % 13 == 10 || m % 13 == 11) {
+	else if (m  == 9 || m  == 10 || m  == 11) {
 		out << "AUTUMN" << endl;
 	}
 }
