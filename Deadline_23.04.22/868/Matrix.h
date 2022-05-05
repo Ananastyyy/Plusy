@@ -1,7 +1,6 @@
 #pragma once
 
 class Matrix {
-public:
 	int** arr;
 	int n;
 	int m;
